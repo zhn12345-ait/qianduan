@@ -1,0 +1,31 @@
+server:
+  port: 8085
+spring:
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    connect-timeout: 3000
+  mvc:
+      pathmatch:
+        matching-strategy: ant_path_matcher
+#简单字面量
+name: 张三
+age: 20
+gender: true
+name1: "你好 \n 世界"
+name2: 'hello \n world'
+#对象类型
+#person:
+#  name: lisi
+#  age: 18
+#  likes: 跑步
+user:
+  username: abc
+  name123: wangwu
+person1: {name: abc,age: 15}
+likes:
+  - reading
+  - running
+  - singing
+pets: [cat, dog, bird]
